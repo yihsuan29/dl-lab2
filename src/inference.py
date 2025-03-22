@@ -72,7 +72,7 @@ def test(args):
 
 def get_args():
     parser = argparse.ArgumentParser(description='Predict masks from input images')
-    parser.add_argument('--model', default='MODEL.pth', help='path to the stored model weoght')
+    parser.add_argument('--model', '-m', default='MODEL.pth', help='path to the stored model weoght')
     parser.add_argument('--data_path', type=str,default="../dataset", help='path to the input data')
     parser.add_argument('--batch_size', '-b', type=int, default=16, help='batch size')
     parser.add_argument('--visualize', '-v', type=int, default=0, help='visualize or not')
